@@ -1,0 +1,61 @@
+// ------------------------------------
+// Components > Content
+// ------------------------------------
+
+.c-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 var(--grid-margin);
+  max-width: var(--content-width);
+
+  &--no-margin {
+    padding: 0;
+    min-width: 100%;
+
+    :is(video, .kg-image, .kg-header-card, .kg-width-wide) {
+      width: 100%;
+    }
+  }
+
+  > * {
+    min-width: 100%;
+  }
+
+  > * + * {
+    margin-top: var(--content-flow);
+  }
+
+  // Remove space between full-width cards
+  > .kg-width-full + .kg-width-full:not(.kg-width-full.kg-card-hascaption + .kg-width-full) {
+    margin-top: 0;
+  }
+
+  :where(h1, h2, h3) + * {
+    margin-top: calc(var(--content-flow) / 2)
+  }
+
+  a:not([class]) {
+    @include link_underline();
+  }
+
+  :where(hr) {
+    margin: var(--content-flow) 0;
+
+    + * {
+      margin-top: 0;
+    }
+  }
+
+  :is(dd, ol, ul) {
+    padding-left: var(--space-16);
+    padding-right: var(--space-16);
+  }
+
+  // Hide Ghost built-in upgrade call to action box
+  .gh-post-upgrade-cta {
+    display: none;
+    visibility: hidden
+  }
+}

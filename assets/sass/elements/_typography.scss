@@ -1,0 +1,31 @@
+// ------------------------------------
+// Elements > Typography
+// ------------------------------------
+
+:where(h1, h2, h3) {
+  @include font($text-balance: true);
+}
+
+:where(h1, h2, h3, strong) {
+  @include font($weight: medium);
+}
+
+:where(h1) {
+  @include font($size: xLarge);
+
+  + h2, + h3 {
+    margin-top: var(--space-16);
+  }
+}
+
+:where(h2) {
+  @include font($size: large);
+
+  + h3 {
+    margin-top: var(--space-16);
+  }
+}
+
+:where(h3) {
+  @include font($size: base);
+}

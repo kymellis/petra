@@ -1,0 +1,17 @@
+// ------------------------------------
+// Components > Section Headline
+// ------------------------------------
+
+.c-section-headline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: var(--space-32);
+
+  &__title {
+    @include font($size: large, $weight: normal);
+
+    text-transform: uppercase;
+    letter-spacing: var(--font-letter-space);
+  }
+}

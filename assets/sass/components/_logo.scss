@@ -1,0 +1,17 @@
+// ------------------------------------
+// Components > Logo
+// ------------------------------------
+
+.c-logo {
+  margin-right: var(--space-32);
+
+  &__link {
+    @include font($size: large, $line-height: tight, $weight: medium);
+
+    display: block;
+  }
+
+  &__img {
+    max-height: var(--space-40);
+  }
+}

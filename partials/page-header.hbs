@@ -1,0 +1,31 @@
+{{!--
+  Used in the post.hbs & page.hbs file
+--}}
+
+<header class='c-page-header'>
+  <div class='o-grid o-grid--2-columns'>
+
+    <div>
+      <h1 class='c-page-header__heading u-font-heading'>{{ title }}</h1>
+
+      {{#is 'post'}}
+        <div class='c-page-header__meta'>
+          <div class='c-page-header__author'>{{authors separator=' / '}}</div>
+          <time class='c-page-header__date' datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='MMM D, YYYY' }}</time>
+          {{#if reading_time}}<div class='c-page-header__reading-time'>{{ reading_time minute=(t '1 min') minutes=(t '% min') }}</div>{{/if}}
+        </div>
+
+        {{#if tags}}
+          <div class='c-page-header__tags'>
+            {{ tags from='1' separator='&ensp; ✺ &ensp;' }}
+          </div>
+        {{/if}}
+      {{/is}}
+    </div>
+
+    {{#if custom_excerpt}}
+      <p class='c-page-header__subHeading u-font-subHeading'>{{ custom_excerpt }}</p>
+    {{/if}}
+
+  </div>
+</header>

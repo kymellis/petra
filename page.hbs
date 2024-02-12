@@ -1,0 +1,13 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{ meta_title }}{{/contentFor}}
+
+{{#post}}
+  {{#match @page.show_title_and_feature_image}}
+    {{> page-header }}
+  {{/match}}
+
+  <article class='c-content {{ post_class }}'>
+    {{ content }}
+  </article>
+{{/post}}

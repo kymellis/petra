@@ -1,0 +1,8 @@
+// ------------------------------------
+// Generic > Focus
+// ------------------------------------
+
+:is(a, button, input, textarea, summary):focus-visible {
+  outline: var(--focus-outline-size) var(--focus-outline-style) var(--focus-outline-color) !important;
+  outline-offset: var(--focus-outline-offset) !important;
+}

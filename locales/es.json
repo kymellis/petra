@@ -1,0 +1,31 @@
+{
+  "Skip to content": "ir al contenido",
+
+  "Page Not Found": "Página no encontrada",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "Comentarios",
+
+  "1 min": "1 minuto",
+  "% min": "% minutos",
+
+  "Loading": "Cargando",
+  "Load More": "Más artículos",
+
+  "Subscribe": "Suscríbete",
+  "Email address": "Tu correo electrónico",
+  "Subscribe to receive the latest posts in your inbox.": "Suscríbete para recibir las últimas publicaciones en tu bandeja de entrada.",
+  "Please check your inbox and click the link to confirm your subscription.": "Verifica tu bandeja de entrada y haz clic en el enlace para confirmar tu suscripción.",
+  "Please enter a valid email address.": "Por favor, introduce una dirección de correo electrónico válida",
+  "An error occurred, please try again later.": "Se ha producido un error. Vuelve a intentarlo más tarde.",
+
+  "This content is for Members": "Este contenido es para suscriptores",
+  "This content is for Paid Members": "Este contenido es para suscriptores de pago",
+  "This content is for Subscribers on the ": "Este contenido es para Suscriptores en el ",
+  "Already have an account?": "¿Ya estás registrado?",
+
+  "Published with {ghostLink} & {themeLink}": "Publicado con {ghostLink} y {themeLink}"
+}

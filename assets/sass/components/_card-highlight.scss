@@ -1,0 +1,40 @@
+// ------------------------------------
+// Components > Card Highlight
+// ------------------------------------
+
+.c-card-highlight {
+  display: block;
+  text-align: center;
+  padding: var(--space-32);
+  border-radius: var(--space-32);
+  border: var(--border-width) var(--border-style) var(--color-border);
+
+  &__head {
+
+  }
+
+  &__icon {
+    @include font($size: xLarge, $line-height: tight);
+
+    display: block;
+    margin-bottom: var(--space-16);
+    color: var(--ghost-accent-color);
+  }
+
+  &__title {
+    @include font($size: base);
+  }
+
+  &__description {
+    @include font($size: small, $text-balance: true);
+  }
+
+  @include hover() {
+    color: var(--color-text-primary);
+    background-color: var(--color-background-secondary);
+
+    .c-card-highlight__icon {
+      color: var(--ghost-accent-color);
+    }
+  }
+}

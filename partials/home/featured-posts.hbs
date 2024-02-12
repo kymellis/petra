@@ -1,0 +1,21 @@
+{{!-- Homepage featured posts --}}
+
+{{#get 'posts' filter='featured:true' include='tags' limit=@custom.number_of_featured_posts}}
+  {{#if posts}}
+    <div class='c-section c-section--featured-posts'>
+
+      <div class='o-grid'>
+        <div class='c-section-headline'>
+          <h2 class='c-section-headline__title'>{{t 'Featured Posts' }}</h2>
+        </div>
+      </div>
+
+      <div class='o-grid o-grid--2-columns'>
+        {{#foreach posts}}
+          {{> card-post card_post_size='large' }}
+        {{/foreach}}
+      </div>
+
+    </div>
+  {{/if}}
+{{/get}}

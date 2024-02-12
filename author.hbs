@@ -1,0 +1,43 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{ meta_title }}{{/contentFor}}
+
+{{#author}}
+  <header class='c-page-header'>
+    <div class='o-grid o-grid--2-columns'>
+      <div>
+        {{#if profile_image}}
+          <figure class='c-author__media'>
+            <img class='c-author__image lazyload' data-src='{{ img_url profile_image size='profile-image' }}' alt='' width='96' height='96'>
+          </figure>
+        {{/if}}
+
+        <h1 class='u-font-heading'>{{ name }}</h1>
+
+        <div class='u-color-text-secondary'>
+          {{#if twitter}}
+            <a href='{{ twitter_url }}' class='u-link u-mr-8'>Twitter</a>
+          {{/if}}
+
+          {{#if facebook}}
+            <a href='{{ facebook_url }}' class='u-link u-mr-8'>Facebook</a>
+          {{/if}}
+
+          {{#if website}}
+            <a href='{{ website }}' class='u-link u-mr-8'>Website</a>
+          {{/if}}
+
+          {{#if location}}{{ location }}{{/if}}
+        </div>
+      </div>
+
+      {{#if bio}}
+        <p class='c-page-header__excerpt u-font-subHeading'>{{ bio }}</p>
+      {{/if}}
+    </div>
+  </header>
+{{/author}}
+
+{{> loop }}
+
+{{ pagination }}

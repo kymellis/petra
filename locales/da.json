@@ -1,0 +1,32 @@
+{
+  "Skip to content": "spring til indhold",
+
+  "Page Not Found": "Siden blev ikke fundet",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "Kommentarer",
+
+  "1 min": "1 minut",
+  "% min": "% minut",
+
+  "Loading": "Indlæser",
+  "Load More": "Flere indlæg",
+
+  "Subscribe": "Tilmeld",
+  "Email address": "Email adresse",
+  "Subscribe to receive the latest posts in your inbox.": "Abonner for at modtage de seneste indlæg i din indbakke.",
+  "Please check your inbox and click the link to confirm your subscription.": "Kontroller din indbakke, og klik på linket for at bekræfte dit abonnement.",
+  "Please enter a valid email address.": "Indtast venligst en gyldig e-mailadresse!",
+  "An error occurred, please try again later.": "Der opstod en fejl. Prøv venligst igen senere.",
+
+  "This content is for Members": "Dette indhold er til medlemmer",
+  "This content is for Paid Members": "Dette indhold er til betalte medlemmer",
+  "This content is for Subscribers on the ": "Dette indhold er for abonnenter på ",
+  "Upgrade your account": "Opgrader din konto",
+  "Already have an account?": "har du allerede en bruger?",
+
+  "Published with {ghostLink} & {themeLink}": "Udgivet med {ghostLink} & {themeLink}"
+}

@@ -1,0 +1,32 @@
+{
+  "Skip to content": "Aller au contenu",
+
+  "Page Not Found": "Page non trouvée",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "commentaires",
+
+  "1 min": "1 min",
+  "% min": "% min",
+
+  "Loading": "Chargement",
+  "Load More": "Plus d’articles",
+
+  "Subscribe": "S’abonner",
+  "Email address": "Votre adresse courriel",
+  "Subscribe to receive the latest posts in your inbox.": "Abonnez-vous pour recevoir les derniers articles dans votre boîte de réception.",
+  "Please check your inbox and click the link to confirm your subscription.": "Veuillez vérifier votre boîte de réception et cliquez sur le lien pour confirmer votre abonnement.",
+  "Please enter a valid email address.": "S'il vous plaît, mettez une adresse email valide!",
+  "An error occurred, please try again later.": "Une erreur est survenue, veuillez réessayer plus tard.",
+
+  "This content is for Members": "Ce contenu est destiné aux membres",
+  "This content is for Paid Members": "Ce contenu est destiné aux membres payants",
+  "This content is for Subscribers on the ": "Ce contenu est pour les abonnés sur le ",
+  "Upgrade your account": "Ameliorez votre compte",
+  "Already have an account?": "Vous avez déjà un compte?",
+
+  "Published with {ghostLink} & {themeLink}": "Publié avec {ghostLink} & {themeLink}"
+}

@@ -1,0 +1,62 @@
+// ------------------------------------
+// Components > Card tag
+// ------------------------------------
+
+.c-card-tag {
+  --border-radius-outer: var(--space-32);
+  --padding: var(--space-24);
+  --border-radius-inner: calc(var(--border-radius-outer) - var(--padding));
+
+  display: block;
+  position: relative;
+  padding: var(--padding);
+  border-radius: var(--border-radius-outer);
+  border: var(--border-width) var(--border-style) var(--color-border);
+
+  &--has-no-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__media {
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--border-radius-inner);
+    margin-bottom: var(--space-16);
+    aspect-ratio: var(--ratio-3x2);
+    background-color: var(--color-background-secondary);
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    @include font($size: base, $weight: medium);
+
+    a:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  @include hover() {
+    background-color: var(--color-background-secondary);
+
+    .c-card-post__media {
+      opacity: .9;
+      transition: opacity var(--motion-duration-fast) linear;
+    }
+  }
+}

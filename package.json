@@ -1,0 +1,127 @@
+{
+  "name": "petra",
+  "description": "Premium Ghost CMS Theme",
+  "demo": "https://petra.aspirethemes.com/",
+  "docs": "https://aspirethemes.com/docs/petra",
+  "version": "1.0.3",
+  "engines": {
+    "ghost": ">=5.0.0"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "lazysizes": "^5.3.2",
+    "modern-normalize": "^2.0.0",
+    "prismjs": "^1.29.0",
+    "sass-mq": "^6.0.0"
+  },
+  "devDependencies": {
+    "concat": "^3.0.0",
+    "fs": "^0.0.2",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jshint": "^2.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-rtlcss": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-size": "^4.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
+    "jshint": "^2.13.6",
+    "jshint-stylish": "^2.2.1",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.69.3"
+  },
+  "author": {
+    "name": "Aspire Themes",
+    "email": "ahmad@aspirethemes.com",
+    "url": "https://aspirethemes.com/"
+  },
+  "config": {
+    "custom": {
+      "enable_search": {
+        "type": "boolean",
+        "default": true
+      },
+      "text_color_primary": {
+        "type": "color",
+        "default": "#0F0F06"
+      },
+      "text_color_secondary": {
+        "type": "color",
+        "default": "#424242"
+      },
+      "border_color": {
+        "type": "color",
+        "default": "#6A6A25"
+      },
+      "background_color_primary": {
+        "type": "color",
+        "default": "#F7F7E9"
+      },
+      "background_color_secondary": {
+        "type": "color",
+        "default": "#FFFFFF"
+      },
+      "instagram_page": {
+        "type": "text",
+        "default": ""
+      },
+      "pinterest_page": {
+        "type": "text",
+        "default": ""
+      },
+      "youtube_page": {
+        "type": "text",
+        "default": ""
+      },
+      "linkedin_page": {
+        "type": "text",
+        "default": ""
+      },
+      "number_of_featured_posts": {
+        "type": "text",
+        "default": "2",
+        "group": "homepage"
+      },
+      "number_of_recent_posts": {
+        "type": "text",
+        "default": "6",
+        "group": "homepage"
+      },
+      "show_highlights_section": {
+        "type": "boolean",
+        "default": false,
+        "group": "homepage"
+      }
+    },
+    "card_assets": {
+      "exclude": [
+        "button",
+        "blockquote",
+        "bookmark",
+        "image",
+        "gallery"
+      ]
+    },
+    "posts_per_page": 15,
+    "image_sizes": {
+      "profile-image": {
+        "width": 320
+      },
+      "feature-image": {
+        "width": 527
+      },
+      "feature-image-large": {
+        "width": 1054
+      }
+    }
+  }
+}

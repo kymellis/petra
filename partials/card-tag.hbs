@@ -1,0 +1,13 @@
+<div class='c-card-tag {{#unless feature_image}} c-card-tag--has-no-image {{/unless}}' {{#if accent_color}} style="--color-accent-tag: {{ accent_color }}"{{/if}}>
+  {{#if feature_image}}
+    <div class='c-card-tag__media'>
+      <img
+        class='c-card-tag__image lazyload'
+        alt="{{#if feature_image_alt}}{{ feature_image_alt }}{{ else }}{{ title }}{{/if}}"
+        data-src='{{ img_url feature_image size='feature-image-large' format='webp' }}'
+      >
+    </div>
+  {{/if}}
+
+  <h3 class='c-card-tag__title {{ card_post_size }}'><a href='{{ url }}'>{{ name }}</a></h3>
+</div>

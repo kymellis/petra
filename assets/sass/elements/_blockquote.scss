@@ -1,0 +1,12 @@
+// ------------------------------------
+// Elements > Blockquote
+// ------------------------------------
+
+blockquote {
+  @include font($size: medium, $weight: medium);
+
+  &:not(.kg-blockquote-alt) {
+    padding-left: var(--space-20);
+    border-left: var(--space-4) solid var(--ghost-accent-color);
+  }
+}

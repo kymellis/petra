@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang='{{ @site.locale }}'>
+
+  {{> structure/head }}
+
+  <body class='{{ body_class }}'>
+    {{> structure/header }}
+
+    <main id='main'>
+      {{{ body }}}
+    </main>
+
+    {{> newsletter-section }}
+
+    {{> structure/footer }}
+
+    <script src='{{ asset 'js/app.min.js' }}'></script>
+    {{ ghost_foot }}
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "Skip to content": "içeriğe geç",
+
+  "Page Not Found": "Sayfa Bulunamadı",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "Yorumlar",
+
+  "1 min": "1 dakikada",
+  "% min": "% dakikada",
+
+  "Loading": "Yükleniyor",
+  "Load More": "Daha Fazla Gönderi",
+
+  "Subscribe": "Abone Ol",
+  "Email address": "E-Posta adresiniz",
+  "Subscribe to receive the latest posts in your inbox.": "Gelen kutunuzdaki en son gönderileri almak için abone olun.",
+  "Please check your inbox and click the link to confirm your subscription.": "Lütfen gelen kutunuzu kontrol edin ve aboneliğinizi onaylamak için bağlantıya tıklayın.",
+  "Please enter a valid email address.": "Lütfen geçerli bir e-posta adresi girin!",
+  "An error occurred, please try again later.": "Bir hata meydana geldi, lütfen tekrar deneyin.",
+
+  "This content is for Members": "Bu İçerik Üyeler içindir",
+  "This content is for Paid Members": "Bu İçerik Ücretli Üyeler içindir",
+  "This content is for Subscribers on the ": "Bu içerik, aboneler içindir ",
+  "Upgrade your account": "Hesabınızı yükseltin",
+  "Already have an account?": "Zaten bir hesabınız var mı?",
+
+  "Published with {ghostLink} & {themeLink}": "{ghostLink} ve {themeLink} ile oluşturuldu"
+}

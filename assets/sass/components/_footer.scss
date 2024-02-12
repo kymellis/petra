@@ -1,0 +1,48 @@
+// ------------------------------------
+// Components > Footer
+// ------------------------------------
+
+.c-footer {
+  position: sticky;
+  top: 100vh;
+  padding: var(--space-64) 0;
+  margin-top: var(--space-64);
+  background-color: var(--color-background-secondary);
+
+  @include mq($from: desktop) {
+    padding: var(--space-96) 0;
+    margin-top: var(--space-96);
+  }
+
+  > * + * {
+    margin-top: var(--content-flow);
+  }
+}
+
+.c-footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: var(--space-24);
+
+  @include mq($from: desktop) {
+    grid-gap: var(--space-32);
+  }
+
+  li:not(:last-child) {
+    margin: 0
+  }
+
+  a {
+    @include link_underline();
+  }
+}
+
+.c-footer-copy {
+  text-align: center;
+  color: var(--color-text-secondary);
+
+  a {
+    @include link_underline();
+  }
+}

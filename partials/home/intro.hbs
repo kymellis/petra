@@ -1,0 +1,32 @@
+{{!-- Homepage Intro --}}
+
+{{#page}}
+  <div class='o-grid o-grid--2-columns'>
+    <article class='c-content c-content--home c-content--no-margin'>
+      <h1 class='u-font-heading'>{{ title }}</h1>
+      <h2 class='u-font-subHeading'>{{ custom_excerpt }}</h2>
+      {{ content }}
+
+      {{#unless @member}}
+        {{#if @site.members_enabled}}
+          {{#unless @site.members_invite_only}}
+            {{> newsletter-form inputLabel='homepage-newsletter-form'}}
+          {{/unless}}
+        {{/if}}
+      {{/unless}}
+    </article>
+
+    {{#if feature_image}}
+      <figure class='c-feature-image-figure'>
+        <img
+          alt="{{#if feature_image_alt}}{{ feature_image_alt }}{{/if}}"
+          class='c-feature-image lazyload'
+          data-src='{{ img_url feature_image size='feature-image-large' format='webp' }}'
+        >
+        {{#if feature_image_caption}}
+          <figcaption class='c-feature-image-caption'>{{ feature_image_caption }}</figcaption>
+        {{/if}}
+      </figure>
+    {{/if}}
+  </div>
+{{/page}}

@@ -1,0 +1,63 @@
+// ------------------------------------
+// Trumbs > Typography
+// ------------------------------------
+
+// Size
+
+.u-font-size-small {
+  @include font($size: small);
+}
+
+.u-font-size-base {
+  @include font($size: base);
+}
+
+.u-font-size-large {
+  @include font($size: large);
+}
+
+.u-font-size-xLarge {
+  @include font($size: xLarge);
+}
+
+// Weight
+
+.u-font-weight-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.u-font-weight-medium {
+  font-weight: var(--font-weight-medium);
+}
+
+.u-font-weight-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+// Style
+
+.u-font-heading {
+  @include font($size: large, $weight: medium);
+
+  @include mq($from: desktop) {
+    @include font($size: xLarge);
+
+    letter-spacing: var(--font-letter-space-negative);
+  }
+}
+
+.u-font-subHeading {
+  @include font($size: large, $weight: normal, $text-balance: true);
+
+  @include mq($from: desktop) {
+    @include font($size: large);
+  }
+}
+
+.u-font-uppercase {
+  text-transform: uppercase;
+}
+
+.u-font-letter-space {
+  letter-spacing: var(--font-letter-space);
+}

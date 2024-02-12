@@ -1,0 +1,23 @@
+{{!-- Homepage recent posts --}}
+
+{{#get 'posts' filter='featured:false' include='tags' limit=@custom.number_of_recent_posts}}
+  {{#if posts}}
+    <div class='c-section c-section--recent-posts'>
+
+      <div class='o-grid'>
+        <div class='c-section-headline'>
+          <h2 class='c-section-headline__title'>{{t 'Recent Posts' }}</h2>
+
+          <a href='{{ @site.url }}/blog/' class='u-link u-font-size-small u-font-uppercase u-font-letter-space {{#match @custom.number_of_recent_posts 'all'}}u-hidden{{/match}}'>View all</a>
+        </div>
+      </div>
+
+      <div class='o-grid o-grid--3-columns'>
+        {{#foreach posts}}
+          {{> card-post }}
+        {{/foreach}}
+      </div>
+
+    </div>
+  {{/if}}
+{{/get}}

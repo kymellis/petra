@@ -1,0 +1,37 @@
+// ------------------------------------
+// Objects > Grid
+// ------------------------------------
+
+.o-grid {
+  margin: auto;
+  display: grid;
+  grid-gap: var(--grid-gap);
+  max-width: var(--grid-width);
+  padding: 0 var(--grid-margin);
+
+  &--2-columns {
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  &--3-columns {
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include mq($from: desktop) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  &--4-columns {
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @include mq($from: desktop) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}

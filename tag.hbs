@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{ meta_title }}{{/contentFor}}
+
+{{#tag}}
+  <header class='c-page-header'>
+    <div class='o-grid o-grid--2-columns'>
+      <h1 class='c-page-header__heading u-font-heading'>{{ name }}</h1>
+      {{#if description}}
+        <p class='c-page-header__subHeading u-font-subHeading'>{{ description }}</p>
+      {{/if}}
+    </div>
+  </header>
+{{/tag}}
+
+{{> loop }}
+
+{{ pagination }}

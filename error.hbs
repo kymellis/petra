@@ -1,0 +1,26 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{t 'Page Not Found' }}{{/contentFor}}
+
+<header class='c-page-header'>
+  <div class='o-grid o-grid--2-columns'>
+    <h1 class='c-page-header__heading u-font-heading'>404</h1>
+    <p class='c-page-header__subHeading u-font-subHeading'>{{t 'Page Not Found' }}</p>
+  </div>
+</header>
+
+{{#get 'posts' include='tags' limit='6'}}
+  {{#if posts}}
+    <div class='o-grid'>
+      <div class='c-section-headline'>
+        <h2 class='c-section-headline__title'>{{t 'Recent Posts' }}</h2>
+      </div>
+    </div>
+
+    <div class='o-grid o-grid--3-columns'>
+      {{#foreach posts}}
+        {{> card-post }}
+      {{/foreach}}
+    </div>
+  {{/if}}
+{{/get}}

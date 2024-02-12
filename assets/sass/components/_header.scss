@@ -1,0 +1,19 @@
+// ------------------------------------
+// Components > Header
+// ------------------------------------
+
+.c-header {
+  padding: var(--space-32) 0;
+  margin-bottom: var(--space-32);
+  border-bottom: var(--border-width) var(--border-style) var(--color-border);
+
+  @include mq($from: desktop) {
+    margin-bottom: var(--space-64);
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}

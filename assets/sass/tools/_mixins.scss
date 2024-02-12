@@ -1,0 +1,83 @@
+// ------------------------------------
+// Tools > Mixins
+// ------------------------------------
+
+// Apply `attention` styles in one go.
+// https://goo.gl/LFx8on
+//
+// Example use:
+//
+// @include attention() {
+//   text-decoration: underline;
+// }
+
+@mixin attention() {
+  &:is(:hover, :active, :focus) {
+    @content;
+  }
+}
+
+@mixin hover() {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin font($family: null, $size: null, $line-height: null, $weight: null, $text-balance: null) {
+  @if $family {
+    font-family: var(--font-family);
+  }
+
+  @if $size {
+    font-size: var(--font-size-#{$size});
+  }
+
+  @if $line-height {
+    line-height: var(--line-height-#{$line-height});
+  } @else if $size {
+    line-height: var(--line-height-#{$size});
+  }
+
+  @if $weight {
+    font-weight: var(--font-weight-#{$weight});
+  }
+
+  @if $text-balance {
+    text-wrap: balance;
+  }
+}
+
+@mixin link_underline_on_hover() {
+  @include hover() {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: var(--space-2);
+  }
+}
+
+@mixin link_underline() {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: var(--space-2);
+
+  @include hover() {
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    text-decoration: none;
+  }
+}
+
+@mixin caption() {
+  width: 100%;
+  padding-top: var(--space-8);
+  color: var(--color-text-secondary);
+  background-color: var(--color-background-primary);
+
+  @include font($size: small);
+
+  a {
+    @include link_underline();
+  }
+}

@@ -1,0 +1,22 @@
+{{!--
+  Related content
+  Change the limit value from '2' to whatever number you want to show a limited number, for example, to show three posts, use limit='3'
+--}}
+
+{{#get 'posts' filter='tags:[{{post.primary_tag.slug}}]+id:-{{post.id}}' include='tags' limit='2'}}
+  {{#if posts}}
+    <div class='c-section'>
+      <div class='o-grid'>
+        <div class='c-section-headline'>
+          <h2 class='c-section-headline__title'>{{t 'Next' }}</h2>
+        </div>
+      </div>
+
+      <div class='o-grid o-grid--2-columns'>
+        {{#foreach posts}}
+          {{> card-post card_post_size='large' }}
+        {{/foreach}}
+      </div>
+    </div>
+  {{/if}}
+{{/get}}

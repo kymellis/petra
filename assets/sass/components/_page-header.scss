@@ -1,0 +1,55 @@
+// ------------------------------------
+// Components > Page Header
+// ------------------------------------
+
+.c-page-header {
+  margin-bottom: var(--space-32);
+
+  @include mq($from: desktop) {
+    margin-bottom: var(--space-64);
+  }
+
+  &__meta {
+    display: flex;
+    margin-top: var(--space-8);
+
+    > * + * {
+      &:before {
+        content: var(--html-symbol-space) var(--html-symbol-emDash) var(--html-symbol-space);
+      }
+    }
+  }
+
+  &__author {
+    @include font($size: small);
+
+    color: var(--color-text-secondary);
+
+    a {
+      @include link_underline();
+    }
+  }
+
+  &__date {
+    @include font($size: small);
+
+    color: var(--color-text-secondary);
+  }
+
+  &__reading-time {
+    @include font($size: small);
+
+    color: var(--color-text-secondary);
+  }
+
+  &__tags {
+    @include font($size: small);
+
+    margin-top: var(--space-16);
+    color: var(--color-text-secondary);
+
+    a {
+      @include link_underline();
+    }
+  }
+}

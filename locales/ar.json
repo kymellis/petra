@@ -1,0 +1,33 @@
+{
+  "Skip to content": "تخطى الى المحتوى",
+
+  "Page Not Found": "الصفحة غير موجودة",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "تعليقات",
+
+  "1 min": "1 دقيقة",
+  "% min": "% دقائق",
+
+  "Loading": "جار التحميل",
+  "Load More": "تحميل المزيد",
+
+  "Subscribe": "اشترك",
+  "Newsletter": "النشرة الإخبارية",
+  "Email address": "عنوان بريدك الإلكتروني",
+  "Subscribe to receive the latest posts in your inbox.": "اشترك لتلقي أحدث المنشورات في صندوق الوارد الخاص بك.",
+  "Please check your inbox and click the link to confirm your subscription.": "يرجى التحقق من صندوق الوارد الخاص بك والنقر على الرابط لتأكيد اشتراكك.",
+  "Please enter a valid email address.": "من فضلك أدخل بريد أليكترونى صحيح!",
+  "An error occurred, please try again later.": "لقد حدث خطأ، رجاء أعد المحاولة لاحقا.",
+
+  "This content is for Members": "هذا المحتوى للأعضاء",
+  "This content is for Paid Members": "هذا المحتوى مخصص للأعضاء المشتركين",
+  "This content is for Subscribers on the ": "هذا المحتوى للمشتركين على ",
+  "Upgrade your account": "قم بترقية حسابك",
+  "Already have an account?": "هل لديك حساب؟",
+
+  "Published with {ghostLink} & {themeLink}": "نشرت مع {ghostLink} & {themeLink}"
+}

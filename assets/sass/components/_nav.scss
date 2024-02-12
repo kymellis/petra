@@ -1,0 +1,168 @@
+// ------------------------------------
+// Components > Site Navigation
+// ------------------------------------
+
+.c-nav-wrap {
+  @include mq($until: desktop) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    padding: var(--space-32) var(--grid-margin);
+    background-color: var(--color-background-secondary);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(.96);
+
+    &.is-active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      transition: all var(--motion-duration-fast) cubic-bezier(.694, 0, .335, 1);
+    }
+  }
+
+  @include mq($from: desktop) {
+    display: block;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.c-nav {
+  @include mq($until: desktop) {
+    width: 100%;
+    padding-right: var(--space-40);
+  }
+
+  @include mq($from: desktop) {
+    display: flex;
+    gap: var(--space-24);
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    @include mq($until: desktop) {
+      margin-bottom: var(--space-16);
+    }
+
+    &--hasDropDown {
+      @include mq($from: desktop) {
+        position: relative;
+
+        > .c-nav__link:after {
+          all: unset;
+          content: '↓';
+          padding-left: var(--space-4);
+        }
+
+        &:hover,
+        &:focus-within {
+          > .c-nav__link:after {
+            background-color: transparent;
+          }
+
+          .c-nav__dropDown {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  &__dropDown {
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: var(--space-32);
+    padding: var(--space-24);
+    min-width: max-content;
+    border-radius: var(--border-radius);
+    background: var(--color-background-secondary);
+    border: var(--border-width) var(--border-style) var(--color-border);
+
+    > * + * {
+      margin-top: var(--space-12);
+    }
+  }
+
+  &__link {
+    @include mq($until: desktop) {
+      display: block;
+    }
+
+    @include link_underline_on_hover();
+  }
+}
+
+[aria-current='page'] {
+  @include link_underline();
+
+  .home-template & {
+    text-decoration: none;
+  }
+}
+
+.c-nav-toggle {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  height: var(--space-16);
+  width: var(--space-24);
+  cursor: pointer;
+
+  @include mq($from: desktop) {
+    display: none;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 0;
+    height: 1px;
+    width: var(--space-24);
+    background: var(--color-text-primary);
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      height: 100%;
+      background-color: inherit;
+    }
+
+    &:before { transform: translateY(16px) }
+    &:after { transform: translateY(7px); }
+
+    .c-nav-toggle--close & {
+      height: 2px;
+      background-color: transparent;
+
+      &:before,
+      &:after {
+        position: relative;
+        visibility: visible;
+        background: var(--color-text-primary);
+      }
+
+      &:before {
+        top: 9px;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        top: 7px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

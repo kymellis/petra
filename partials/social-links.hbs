@@ -1,0 +1,37 @@
+<ul class='u-plain-list c-footer-nav'>
+  {{#if @site.twitter}}
+    <li>
+      <a href='{{ twitter_url }}' class='c-social-link'>Twitter</a>
+    </li>
+  {{/if}}
+
+  {{#if @site.facebook}}
+    <li>
+      <a href='{{ facebook_url }}' class='c-social-link'>Facebook</a>
+    </li>
+  {{/if}}
+
+  {{#if @custom.instagram_page}}
+    <li>
+      <a href='{{ @custom.instagram_page }}' class='c-social-link'>Instagram</a>
+    </li>
+  {{/if}}
+
+  {{#if @custom.pinterest_page}}
+    <li>
+      <a href='{{ @custom.pinterest_page }}' class='c-social-link'>Pinterest</a>
+    </li>
+  {{/if}}
+
+  {{#if @custom.youtube_page}}
+    <li>
+      <a href='{{ @custom.youtube_page }}' class='c-social-link'>YouTube</a>
+    </li>
+  {{/if}}
+
+  {{#if @custom.linkedin_page}}
+    <li>
+      <a href='{{ @custom.linkedin_page }}' class='c-social-link'>LinkedIn</a>
+    </li>
+  {{/if}}
+</ul>

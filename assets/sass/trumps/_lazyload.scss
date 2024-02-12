@@ -1,0 +1,15 @@
+// ------------------------------------
+// Trumbs > Lazyload
+// ------------------------------------
+
+.js-on {
+  .lazyload,
+  .lazyloading {
+    opacity: 0;
+  }
+
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity var(--motion-duration-slow) ease;
+  }
+}

@@ -1,0 +1,17 @@
+// ------------------------------------
+// Elements > hr
+// ------------------------------------
+
+hr {
+  @include font($line-height: tight);
+
+  border: 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  &:before {
+    color: var(--color-text-secondary);
+    content: var(--html-symbol-divider);
+  }
+}

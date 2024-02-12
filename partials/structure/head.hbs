@@ -1,0 +1,22 @@
+<head>
+  <meta charset='utf-8'>
+  <title>{{{block 'title'}}}</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  {{> typography }}
+
+  {{> css/dist/style }}
+
+  {{> colors }}
+
+  <script>
+    var pagination_next_page_number       = '{{ pagination.next }}',
+        pagination_available_pages_number = '{{ pagination.pages }}',
+        pagination_loading_text           = '{{t "Loading" }}',
+        pagination_more_posts_text        = '{{t "Load More" }}';
+
+    document.documentElement.className = 'js-on';
+  </script>
+
+  {{ ghost_head }}
+</head>

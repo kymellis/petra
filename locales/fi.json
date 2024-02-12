@@ -1,0 +1,32 @@
+{
+  "Skip to content": "siirry sisältöön",
+
+  "Page Not Found": "Sivua ei löydetty",
+
+  "Featured Posts": "Featured Posts",
+  "Recent Posts": "Recent Posts",
+  "Next": "Next",
+
+  "Comments": "Kommentit",
+
+  "1 min": "1 minuutti",
+  "% min": "% minuutti",
+
+  "Loading": "Ladataan",
+  "Load More": "Lisää artikkelit",
+
+  "Subscribe": "Tilaa",
+  "Email address": "Sähköpostiosoitteesi",
+  "Subscribe to receive the latest posts in your inbox.": "Tilaa, niin saat viimeisimmät viestit postilaatikkoosi.",
+  "Please check your inbox and click the link to confirm your subscription.": "Tarkista postilaatikko ja napsauta linkkiä vahvistaaksesi tilauksesi.",
+  "Please enter a valid email address.": "Ole hyvä ja syötä toimiva sähköpostiosoite!",
+  "An error occurred, please try again later.": "Tapahtui virhe, yritä myöhemmin uudelleen.",
+
+  "This content is for Members": "Tämä sisältö on tarkoitettu jäsenille",
+  "This content is for Paid Members": "Tämä sisältö on tarkoitettu maksetuille jäsenille",
+  "This content is for Subscribers on the ": "Tämä sisältö on tilaajille ",
+  "Upgrade your account": "Päivitä käyttäjätilisi",
+  "Already have an account?": "Onko sinulla jo tili?",
+
+  "Published with {ghostLink} & {themeLink}": "Julkaistu {ghostLink} & {themeLink}"
+}

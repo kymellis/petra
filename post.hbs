@@ -1,0 +1,19 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{ meta_title }}{{/contentFor}}
+
+{{#post}}
+  {{> page-header }}
+
+  <article class='c-content {{ post_class }}'>
+    {{ content }}
+
+    {{> comments/ghost }}
+
+    {{#unless access}}
+      {{> upgrade }}
+    {{/unless}}
+  </article>
+{{/post}}
+
+{{> related }}

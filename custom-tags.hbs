@@ -1,0 +1,15 @@
+{{!< default}}
+
+{{#contentFor 'title'}}{{ meta_title }}{{/contentFor}}
+
+{{#post}}
+  {{> page-header }}
+{{/post}}
+
+<div class='o-grid o-grid--3-columns'>
+  {{#get 'tags' limit='all'}}
+    {{#foreach tags}}
+      {{> card-tag }}
+    {{/foreach}}
+  {{/get}}
+</div>
