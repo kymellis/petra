@@ -10,7 +10,6 @@
   {{/if}}
 
   <div class='c-card-post__meta'>
-    {{#if tags}}<div class='c-card-post__tag'>{{ tags limit='1' }}</div>{{/if}}
     <time class='c-card-post__date' datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='MMM D, YYYY' }}</time>
     {{#if reading_time}}<div class='c-card-post__reading-time'>{{ reading_time minute=(t '1 min') minutes=(t '% min') }}</div>{{/if}}
   </div>
