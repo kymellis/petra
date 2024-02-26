@@ -7,15 +7,20 @@
       <h2 class='u-font-subHeading'>{{ custom_excerpt }}</h2>
       {{ content }}
 
-      {{#unless @member}}
+        {{#if @member}}
+        <!-- Display link to premium membership signup -->
+        <p><a href='/premium-membership'> 👉🍄 Sign up for Premium Membership</a></p>
+      {{else}}
         {{#if @site.members_enabled}}
           {{#unless @site.members_invite_only}}
+            <!-- Display newsletter subscription form -->
             {{> newsletter-form inputLabel='homepage-newsletter-form'}}
-                          <p class='u-font-small' style='font-size: 13px;'>{{t 'By subscribing, I confirm that I have read and agree to the PMA'}} <a href='/agreement'>Membership Agreement</a></p>
+            <p class='u-font-small' style='font-size: 13px;'>{{t 'By subscribing, I confirm that I have read and agree to the PMA'}} <a href='/agreement'>Membership Agreement</a></p>
           {{/unless}}
         {{/if}}
-      {{/unless}}
+      {{/if}}
     </article>
+
 
     {{#if feature_image}}
       <figure class='c-feature-image-figure'>
