@@ -9,7 +9,9 @@
 
         {{#if @member}}
         <!-- Display link to premium membership signup -->
-        <p><a href='/premium-membership'> 👉🍄 Sign up for Premium Membership</a></p>
+        <button class='c-button'>
+          <a href='/premium-membership' class='c-button__link'>Premium Membership w Free microdoses</a>
+        </button>
       {{else}}
         {{#if @site.members_enabled}}
           {{#unless @site.members_invite_only}}
